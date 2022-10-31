@@ -2,24 +2,24 @@
 body {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
 }
-.aaa {
+.header-element {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header-element img {
   width: 100%;
 }
-.aaa .more_inf {
+.header-element .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa {
+  .header-element {
   text-align: center;
   }
 
@@ -55,11 +55,11 @@ button {
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
   cursor: pointer;
 }
 button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 /* Heading */
 h3,
@@ -78,8 +78,8 @@ input[type="text"] {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -136,10 +136,10 @@ ul#completed-tasks label {
 ul li input[type="text"] {
   display: none;
 }
-ul li.editMode input[type="text"] {
+ul li.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
-ul li.editMode label {
+ul li.edit-mode label {
   display: none;
 }
