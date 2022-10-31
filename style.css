@@ -4,27 +4,27 @@ body {
   color: #333;
   font-family: lato, sans-serif;
 }
-.header {
+.info-container {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.header img {
+.info-container img {
   width: 100%;
 }
-.header .eisenhower-matrix-info {
+.info-container .eisenhower-matrix-link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .header {
+  .info-container {
   text-align: center;
   }
 
 }
-.main {
+.list-container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
