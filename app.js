@@ -18,7 +18,7 @@ var completedTasksHolder=document.querySelector(".list_completed");//completed-t
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-    listItem.className="item"
+    listItem.className="todo__item"
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -39,17 +39,17 @@ var createNewTaskElement=function(taskString){
 
     //Each elements, needs appending
     checkBox.type="checkbox";
-    checkBox.classList.add("input-checkbox");
+    checkBox.classList.add("todo__input-checkbox");
     editInput.type="text";
-    editInput.className="task";
-    editInput.classList.add("input-text");
+    editInput.className="todo__task";
+    editInput.classList.add("todo__input-text");
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="list__edit-button";
-    editButton.classList.add("button");
+    editButton.classList.add("todo__button");
 
     deleteButton.className="list__delete-button";
-    deleteButton.classList.add("button");
+    deleteButton.classList.add("todo__button");
     deleteButtonImg.src="./remove.svg";
     deleteButtonImg.classList.add("list__delete-icon")
     deleteButtonImg.setAttribute('alt', 'remove symbol image')
@@ -90,7 +90,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector(".input-text");
+    var editInput=listItem.querySelector(".todo__input-text");
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".list__edit-button");
     var containsClass=listItem.classList.contains("list__item_edit-mode");
