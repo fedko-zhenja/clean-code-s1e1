@@ -5,6 +5,10 @@
   font-family: lato, sans-serif;
 }
 
+.main-title {
+    display: none;
+}
+
 .header {
   width: 500px;
   margin: 0 auto;
@@ -50,7 +54,7 @@
 }
 
 li,
-h3 {
+h2 {
   list-style: none;
 }
 
